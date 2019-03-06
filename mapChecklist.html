@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container" id="main-container">
+    <header>
+      <nav>
+        <ul>
+          <li>main menu</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>MAP Checklist and Research</h1>
+      <div class="product-name">
+        <h3>Product name</h3>
+
+      </div>
+      <div class="product-asin">
+        <h3>Product ASIN</h3>
+
+      </div>
+      <div class="product-image">
+        <h3>Product Image</h3>
+
+      </div>
+    </section>
+    <section>
+      <form class="data" action="index.html" method="post">
+        <fieldset>
+          <legend>keyword Research</legend>
+          <label for="keyword-term">
+            Keyword Term:
+            <input type="text" name="keyword-term" value="">
+          </label>
+          <label for="keyword-term">
+            Keyword Results:
+            <input type="text" name="keyword-results" value="">
+          </label>
+          <p>Are there items similar to the product being researched?
+          <ul>
+            <li>
+              <label for="keyword-similar-yes">
+                Yes
+                <input type="radio" id="keyword-similar-yes" name="keyword-similar" value="Yes">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-no">
+                No
+              <input type="radio" id="keyword-similar-no" name="keyword-similar" value="No">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>Are the similar items more generic or more unique?
+          <ul>
+            <li>
+              <label for="keyword-similar-generic">
+                Generic
+                <input type="radio" id="keyword-similar-generic" name="keyword-similar-match" value="generic">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-unique">
+                Unique
+              <input type="radio" id="keyword-similar-unique" name="keyword-similar-match" value="unique">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>Are there irrelevant items in search?
+          <ul>
+            <li>
+              <label for="keyword-irrelevant-none">
+                none
+                <input type="radio" id="keyword-irrelevant-none" name="keyword-irrelevant" value="none">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-irrelevant-some">
+                some
+              <input type="radio" id="keyword-irrelevant-some" name="keyword-irrelevant" value="some">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-irrelevant-many">
+                many
+              <input type="radio" id="keyword-irrelevant-many" name="keyword-irrelevant" value="many">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>What is the level of confusion in the market place?
+          <ul>
+            <li>
+              <label for="keyword-confusion-none">
+                none
+                <input type="radio" id="keyword-confusion-none" name="keyword-confusion" value="none">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-confusion-some">
+                some
+              <input type="radio" id="keyword-confusion-some" name="keyword-confusion" value="some">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-confusion-very">
+                very
+              <input type="radio" id="keyword-confusion-very" name="keyword-confusion" value="very">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>Do similar products within the results have bonus items?
+          <ul>
+            <li>
+              <label for="keyword-similar-bonus-none">
+                none
+                <input type="radio" id="keyword-similar-bonus-none" name="keyword-similar-bonus" value="none">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-bonus-some">
+                some
+              <input type="radio" id="keyword-similar-bonus-some" name="keyword-similar-bonus"value="some">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-bonus-many">
+                many
+              <input type="radio" id="keyword-similar-bonus-many" name="keyword-similar-bonus" value="many">
+              </label>
+            </li>
+          </ul>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Market Research</legend>
+          <label for="keyword-term">
+            ASIN of similar product:
+            <input type="text" name="keyword-term" value="">
+          </label>
+          <label for="keyword-term">
+            Current BSR:
+            <input type="text" name="keyword-results" value="">
+          </label>
+          <label for="amazon-category">
+            Amazon Category:
+            <select id="amazon-category">
+                <option value="">--Please choose an option--</option>
+                <option value="EA">Electronic Accessories</option>
+                <option value="DT_uk">DIY &amp; Tools</option>
+                <option value="MDJ_uk">Music &amp; DJ</option>
+                <option value="Others">Others</option>
+                <option value="Car_Moto">Car &amp; Motorbike</option>
+                <option value="CompAcc">Computer Accessories</option>
+                <option value="SportOut">Sports &amp; Outdoors</option>
+                <option value="Home-kitchen">Home &amp; Kitchen</option>
+                <option value="Pets">Pets</option>
+                <option value="Health-beauty">Health &amp; Beauty</option>
+                <option value="PLG">Patio Lawn &amp; Garden</option>
+                <option value="Home-imporve">Home Improvement</option>
+                <option value="Baby">Baby</option>
+                <option value="KitchDine">Kitchen &amp; Dining</option>
+                <option value="Jewelry">Jewelry</option>
+                <option value="ArtCraft">Arts &amp; Crafts</option>
+            </select>
+          </label>
+          <label for="listing-quality">
+            How good is the listing?
+            <select id="listing-quality" class="">
+              <option value="">-- Select --</option>
+              <option value="0">Perfect</option>
+              <option value="1">Good</option>
+              <option value="2">Medium</option>
+              <option value="3">Poor</option>
+            </select>  
+          </label>
+          <p>Are the similar items more generic or more unique?
+          <ul>
+            <li>
+              <label for="keyword-similar-generic">
+                Generic
+                <input type="radio" id="keyword-similar-generic" name="keyword-similar-match" value="generic">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-unique">
+                Unique
+              <input type="radio" id="keyword-similar-unique" name="keyword-similar-match" value="unique">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>Are there irrelevant items in search?
+          <ul>
+            <li>
+              <label for="keyword-irrelevant-none">
+                none
+                <input type="radio" id="keyword-irrelevant-none" name="keyword-irrelevant" value="none">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-irrelevant-some">
+                some
+              <input type="radio" id="keyword-irrelevant-some" name="keyword-irrelevant" value="some">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-irrelevant-many">
+                many
+              <input type="radio" id="keyword-irrelevant-many" name="keyword-irrelevant" value="many">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>What is the level of confusion in the market place?
+          <ul>
+            <li>
+              <label for="keyword-confusion-none">
+                none
+                <input type="radio" id="keyword-confusion-none" name="keyword-confusion" value="none">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-confusion-some">
+                some
+              <input type="radio" id="keyword-confusion-some" name="keyword-confusion" value="some">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-confusion-very">
+                very
+              <input type="radio" id="keyword-confusion-very" name="keyword-confusion" value="very">
+              </label>
+            </li>
+          </ul>
+          </p>
+          <p>Do similar products within the results have bonus items?
+          <ul>
+            <li>
+              <label for="keyword-similar-bonus-none">
+                none
+                <input type="radio" id="keyword-similar-bonus-none" name="keyword-similar-bonus" value="none">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-bonus-some">
+                some
+              <input type="radio" id="keyword-similar-bonus-some" name="keyword-similar-bonus"value="some">
+              </label>
+            </li>
+            <li>
+              <label for="keyword-similar-bonus-many">
+                many
+              <input type="radio" id="keyword-similar-bonus-many" name="keyword-similar-bonus" value="many">
+              </label>
+            </li>
+          </ul>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
